@@ -1,6 +1,8 @@
 import "./index.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Header(){
+    const nav = useNavigate();
     return(
         <header>
             <div className="top">
@@ -11,7 +13,7 @@ export default function Header(){
                     <p>Home</p>
                     <p>Sobre</p>
                     <p>Projetos</p>
-                    <p>Contatos</p>
+                    <p onClick={() => nav("/contacts")}>Contatos</p>
                 </ul>
             </div>
         </header>

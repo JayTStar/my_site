@@ -1,0 +1,13 @@
+main{
+    width: 100vw;
+    height: 40vh;
+    margin-top: 12vh;
+}
+
+main ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
