@@ -11,8 +11,8 @@ export default function Header(){
             </div>
             <div className="bottom">
                 <ul>
-                    <p>Home</p>
-                    <p>Sobre</p>
+                    <p onClick={() => nav('/')}>Home</p>
+                    <p onClick={() => nav('/about')}>Sobre</p>
                     <p onClick={() => nav('/projects')}>Projetos</p>
                     <p onClick={() => nav("/contacts")}>Contatos</p>
                 </ul>
