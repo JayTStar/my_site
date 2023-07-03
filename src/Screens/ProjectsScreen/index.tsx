@@ -4,7 +4,9 @@ export default function ProjectsScreen(){
     return(
         <>
             <Header/>
-            <p>Em breve meus projetos estarão dosponíveis aqui</p>
+            <main>
+                <p>Em breve meus projetos estarão disponíveis aqui!</p>
+            </main>
         </>
     )
 }
