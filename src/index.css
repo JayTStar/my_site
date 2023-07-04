@@ -1,8 +1,9 @@
 main{
     width: 100vw;
-    height: 100vh;
+    height: calc(88vh - 1px);
 
-    padding-top: 12vh;
+    padding: 0 5vw;
+    padding-top: 3vh;
     box-sizing: border-box;
 
     background-color: #BFB78F;
