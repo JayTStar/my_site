@@ -15,7 +15,12 @@ export default function ContactsScreen(){
                         <BsLinkedin className={"linkedin_icon"} size={"50px"}/>
                         <div className="social_info">
                             <img src="https://media.licdn.com/dms/image/C4D03AQFnEPtge5FKVw/profile-displayphoto-shrink_800_800/0/1660085753030?e=1694044800&v=beta&t=knpD_-kiiBvtQiydVMIc-QjGb1mp-nNtiRsWEkKuzjc" alt="Jorge's profile picture" />
-                            <p>Jorge Tadeu Soares Batalha</p>
+                            <div>
+                                <p>Jorge Tadeu Soares Batalha <span>(ele,dele)</span></p>
+                                <p>Desenvolvedor WEB Full-stack</p>
+                                <p>+ de 500 conexões</p>
+                            </div>
+                            
                         </div>
                     </a>
                     
