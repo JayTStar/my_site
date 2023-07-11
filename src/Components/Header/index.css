@@ -1,6 +1,6 @@
 header{
     width: 100vw;
-    height: 12vh;
+    height: 15vh;
 
     position: relative;
     top: 0;
@@ -42,4 +42,9 @@ header p:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+img{
+    width: auto;
+    height: 15vh;
 }
