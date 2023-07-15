@@ -18,13 +18,15 @@ h2{
     box-sizing: border-box;
 }
 
+/*-----Estilizando a base dos retângulos -----*/
+
 .social{
     width: 10vw;
     height: 30vh;
 
     transition: all 0.5s;
 
-    border: 3px solid;
+    border: 5px solid;
     border-radius: 10px;
 
     position: relative;
@@ -46,9 +48,15 @@ h2{
 }
 
 .social_info p{
-    font-size: large;
+    font-size: x-large;
+
+    color: black;
 }
 
+
+/*-----Estilizando as animações-----*/
+
+/* Fazendo a animação de expansão da caixa */
 .social:hover{
     cursor: pointer;
 
@@ -58,9 +66,15 @@ h2{
     transition: all 0.5s;
 }
 
+.social:hover .social_info{
+    display: flex;
+}
+
+/* Fazendo a animação de virar o ícone */
+
 .flip-icon-inner{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 
@@ -74,14 +88,25 @@ h2{
     transform: rotateY(180deg);
 }
 
-.social:hover .social_info{
-    display: flex;
-}
-
 .side1, .side2{
     backface-visibility: hidden;
 }
 
+.side2{
+    width: 80px;
+    height: auto;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: calc(25% - 35px);
+    left: calc(50% - 35PX);
+    transform: rotateY(180deg);
+}
+
+
+/*-----Estilizando os retângulos das redes sociais-----*/
 .linkedin{
     border-color: #0072b1;
 }
@@ -92,19 +117,6 @@ h2{
 
     top: calc(25% - 25px);
     left: calc(50% - 25PX);
-}
-
-.side2{
-    width: 70px;
-    height: auto;
-
-    border-radius: 50%;
-
-    position: absolute;
-
-    top: calc(25% - 35px);
-    left: calc(50% - 35PX);
-    transform: rotateY(180deg);
 }
 
 .instagram{
