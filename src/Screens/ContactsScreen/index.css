@@ -30,6 +30,25 @@ h2{
     position: relative;
 }
 
+.social_info{
+    width: 100%;
+    height: 60%;
+
+    display: none;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.social_info p{
+    font-size: large;
+}
+
 .social:hover{
     cursor: pointer;
 
@@ -53,6 +72,10 @@ h2{
 
 .social:hover .flip-icon-inner{
     transform: rotateY(180deg);
+}
+
+.social:hover .social_info{
+    display: flex;
 }
 
 .side1, .side2{

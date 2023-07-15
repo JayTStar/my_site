@@ -17,11 +17,11 @@ export default function ContactsScreen(){
                             <img className="side2" src="https://media.licdn.com/dms/image/C4D03AQFnEPtge5FKVw/profile-displayphoto-shrink_800_800/0/1660085753030?e=1694044800&v=beta&t=knpD_-kiiBvtQiydVMIc-QjGb1mp-nNtiRsWEkKuzjc" alt="Jorge's profile picture" /> 
                         </div>
                         
-                        {/* <div>
+                        <div className="social_info">
                             <p>Jorge Tadeu Soares Batalha <span>(ele,dele)</span></p>
                             <p>Desenvolvedor WEB Full-stack</p>
                             <p>+ de 500 conexões</p>
-                        </div>  */}
+                        </div>
                     </a>
                     
                     <a href="https://www.instagram.com/jaytstar" target="_blank" className="social instagram">
@@ -30,10 +30,9 @@ export default function ContactsScreen(){
                             <img className="side2" src="https://instagram.fsdu17-1.fna.fbcdn.net/v/t51.2885-19/354818835_1001604137678781_7333640112683736932_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fsdu17-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=HBqECfpJFDUAX83huyH&edm=ACWDqb8BAAAA&ccb=7-5&oh=00_AfCOV_fBb4br57qVroE_vCuPYU8qBIiYnfYWy9P9OKdu0w&oe=64A8D06F&_nc_sid=ee9879" alt="Jay's profile picture" />
                         </div>
                         
-                        {/* <div className="social_info">
-                            
+                        <div className="social_info">
                             <p>@jaytstar</p>
-                        </div> */}
+                        </div>
                     </a>
 
                     <a href="https://github.com/JayTStar" target="_blank" className="social github">
@@ -42,18 +41,29 @@ export default function ContactsScreen(){
                             <img className="side2" src="https://avatars.githubusercontent.com/u/91640043?v=4" alt="Jay's profile picture" />
                         </div>
                         
-                        {/* <div className="social_info">
+                        <div className="social_info">
                             <p>JayTStar</p>
-                        </div> */}
+                        </div>
                     </a>
 
-                    {/* <a href="" target="_blank" className="social whatsapp">
-                        <BsWhatsapp className={"whatsapp_icon"} size={"50px"}/>
+                    <a href="https://wa.me/21982532159" target="_blank" className="social whatsapp">
+                        <div className="flip-icon-inner">
+                            <BsWhatsapp className={"whatsapp_icon"} size={"50px"}/>
+                            <img className="side2" src="https://pps.whatsapp.net/v/t61.24694-24/141460985_328141679403131_3775683904573580212_n.jpg?ccb=11-4&oh=01_AdRdaJjAdJA0L8QpWvtH75LddH3ngNyymWhjEEv7j3TsTQ&oe=64BE41C2" alt="Jay's profile picture" />
+                        </div>
+                        
+                        <div className="social_info">
+                            <p>Número: +55 (21)98253-2159</p>
+                        </div>
                     </a>
 
-                    <a href="" target="_blank" className="social email">
+                    <a href="mailto:jsbatalha.dev@gmail.com" target="_blank" className="social email">
                         <BsFillEnvelopeFill className={"email_icon"} size={"50px"}/>
-                    </a> */}
+
+                        <div className="social_info">
+                            <p>E-mail: jsbatalha.dev@gmail.com</p>
+                        </div>
+                    </a>
                 </ul>
             </main>
         </>
