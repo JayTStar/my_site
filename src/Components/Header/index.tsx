@@ -7,17 +7,12 @@ export default function Header(){
 
     return(
         <header>
-            <div className="top">
-                <img src={logo} alt="Jay's Logo"/>
-            </div>
-            <div className="bottom">
-                <ul>
-                    <p onClick={() => nav('/')}>Home</p>
-                    <p onClick={() => nav('/about')}>Sobre</p>
-                    <p onClick={() => nav('/projects')}>Projetos</p>
-                    <p onClick={() => nav("/contacts")}>Contatos</p>
-                </ul>
-            </div>
+            <ul>
+                <p onClick={() => nav('/')}>Home</p>
+                <p onClick={() => nav('/about')}>Sobre</p>
+                <p onClick={() => nav('/projects')}>Projetos</p>
+                <p onClick={() => nav("/contacts")}>Contatos</p>
+            </ul>
         </header>
     )
 }
