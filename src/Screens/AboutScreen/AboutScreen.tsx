@@ -4,7 +4,7 @@ export default function AboutScreen(){
         <>
             <Header/>
             <main>
-                <p>Em breve você poderá ver mais sobra mim aqui!</p>
+                <p>Em breve você poderá ver mais sobre mim aqui!</p>
             </main>
         </>
     )
