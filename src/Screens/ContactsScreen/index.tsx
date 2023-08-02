@@ -1,4 +1,5 @@
 import "./index.css";
+import "./mobile.css";
 import Header from "../../Components/Header";
 import { BsInstagram, BsGithub, BsLinkedin, BsWhatsapp, BsFillEnvelopeFill} from "react-icons/bs";
 
@@ -10,7 +11,7 @@ export default function ContactsScreen(){
                 <h2>
                     Aqui estão minhas redes sociais! Sinta-se a vontade para entrar em contato comigo.
                 </h2>
-                <ul>
+                <ul className="socials_list">
                     <a href="https://www.linkedin.com/in/jorge-tadeu-soares-batalha/" target="_blank" className="social linkedin">
                         <div className="flip-icon-inner">
                             <BsLinkedin className={"linkedin_icon side1"} size={"50px"}/>
