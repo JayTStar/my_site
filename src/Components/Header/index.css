@@ -24,7 +24,6 @@ header p{
 
 header p:hover{
     cursor: pointer;
-    font-size: 35px;
 }
 
 header ul{
