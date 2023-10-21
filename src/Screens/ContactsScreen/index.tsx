@@ -1,6 +1,5 @@
 import "./index.css";
 import "./mobile.css";
-import Header from "../../Components/Header";
 import { BsInstagram, BsGithub, BsLinkedin, BsWhatsapp, BsFillEnvelopeFill} from "react-icons/bs";
 
 import linkedin from "../../Media/linkedin_profile.jpeg";
@@ -8,7 +7,6 @@ import linkedin from "../../Media/linkedin_profile.jpeg";
 export default function ContactsScreen(){
     return(
         <>
-            <Header/>
             <main>
                 <h2>
                     Aqui estão minhas redes sociais! Sinta-se a vontade para entrar em contato comigo.
