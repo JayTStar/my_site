@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 import { MutableRefObject, useRef } from "react";
 import Header from "../../Components/Header";
 import "./index.css";
 
+=======
+>>>>>>> 7354bdebc937fc9227cc5462f665ff51070a544a
 export default function AboutScreen(){
 
     const Topic1 = useRef(null);
@@ -13,7 +16,6 @@ export default function AboutScreen(){
     }
     return(
         <>
-            <Header/>
             <main>
                 <div className="topics">
                     <ul onClick={() => handleClick(Topic1)}>Pessoal</ul>
