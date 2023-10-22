@@ -9,8 +9,10 @@ export default function ProjectsScreen(){
                 <div className="project">
                     <div className="img"></div>
                     <div className="info">
-                        <p className="title">Title</p>
-                        <p className="about">About</p>
+                        <p className="title">Pong</p>
+                        <p className="about">
+                            Jogo pong feito para treinar logica de programação
+                        </p>
                     </div>
                 </div>
             </main>
