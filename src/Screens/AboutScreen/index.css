@@ -1,0 +1,25 @@
+.topics{
+    width: 10%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    right: 5%;
+    top: 20%;
+}
+.topics ul {
+    width: auto;
+    height: auto;
+}
+
+.topico{
+    background-color: green;
+    width: 50%;
+    height: 50%;
+    
+    padding-top: 10%;
+}
