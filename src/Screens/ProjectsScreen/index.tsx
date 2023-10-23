@@ -5,7 +5,7 @@ import "./index.css"
 export default function ProjectsScreen(){
     return(
         <>
-            <main>
+            <main className="projects">
                 <div className="project">
                     <div className="img"></div>
                     <div className="info">

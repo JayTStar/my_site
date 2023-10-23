@@ -3,7 +3,7 @@ import "./index.css";
 export default function AboutScreen(){
 
     return(
-        <main>
+        <main className="about">
             <div className="timeline">
                 <div className="container left">
                     <div className="content">
