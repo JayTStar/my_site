@@ -5,6 +5,9 @@
 .about{
     background-color: #FFFFFF;
 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     padding-top: 0;
 }
 
@@ -28,27 +31,39 @@
 }
 
 /* Container around content */
-.container {
-padding: 10px 40px;
-position: relative;
-background-color: inherit;
-width: 50%;
+.container{
+    visibility:hidden;
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
 
-color: white;
+    color: white;
+}
+
+.container:hover{
+    visibility:visible;
 }
 
 /* The circles on the timeline */
 .container::after {
-content: '';
-position: absolute;
-width: 25px;
-height: 25px;
-right: -18px;
-background-color: #474143;
-border: 4px solid #FF6444;
-top: 15px;
-border-radius: 50%;
-z-index: 1;
+    visibility:visible;
+    display: inline;
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -18px;
+    background-color: #474143;
+    border: 4px solid #FF6444;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.container:hover::after{
+    background-color: #FF6444;
+    border: 4px solid #474143;
 }
 
 /* Place the container to the left */
