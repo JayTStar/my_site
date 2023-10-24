@@ -24,8 +24,7 @@ export default function ContactsScreen(){
                         <p>Desenvolvedor WEB Full-stack</p>
                         <p>+ de 500 conexões</p>
                     </div>
-        </a>
-=======
+                </a>
                     <a href="https://www.instagram.com/jaytstar" target="_blank" className="social instagram">
                         <div className="flip-icon-inner">
                             <BsInstagram className={"instagram_icon side1"} size={"50px"}/>
