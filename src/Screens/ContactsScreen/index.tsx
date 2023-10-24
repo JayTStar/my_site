@@ -3,6 +3,8 @@ import "./mobile.css";
 import { BsInstagram, BsGithub, BsLinkedin, BsWhatsapp, BsFillEnvelopeFill} from "react-icons/bs";
 
 import linkedin from "../../Media/linkedin_profile.jpeg";
+import instagram from "../../Media/instagram_profile.jpeg";
+
 
 export default function ContactsScreen(){
     return(
@@ -22,18 +24,18 @@ export default function ContactsScreen(){
                         <p>Desenvolvedor WEB Full-stack</p>
                         <p>+ de 500 conexões</p>
                     </div>
-                </a>
-                
-                <a href="https://www.instagram.com/jaytstar" target="_blank" className="social instagram">
-                    <div className="flip-icon-inner">
-                        <BsInstagram className={"instagram_icon side1"} size={"50px"}/>
-                        <img className="side2" src={linkedin} alt="Jay's profile picture" />
-                    </div>
-                    
-                    <div className="social_info">
-                        <p>@jaytstar</p>
-                    </div>
-                </a>
+        </a>
+=======
+                    <a href="https://www.instagram.com/jaytstar" target="_blank" className="social instagram">
+                        <div className="flip-icon-inner">
+                            <BsInstagram className={"instagram_icon side1"} size={"50px"}/>
+                            <img className="side2" src={instagram} alt="Jay's profile picture" />
+                        </div>
+                        
+                        <div className="social_info">
+                            <p>@jaytstar</p>
+                        </div>
+                    </a>
 
                 <a href="https://github.com/JayTStar" target="_blank" className="social github">
                     <div className="flip-icon-inner">
