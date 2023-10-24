@@ -7,7 +7,8 @@ export default function Header(){
     return(
         <header>
             <ul>
-                <p onClick={() => nav('/')}>Sobre</p>
+                <p onClick={() => nav('/')}>Home</p>
+                <p onClick={() => nav('/about')}>Sobre</p>
                 <p onClick={() => nav('/projects')}>Projetos</p>
                 <p onClick={() => nav("/contacts")}>Contatos</p>
             </ul>
