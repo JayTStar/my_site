@@ -6,8 +6,6 @@
    padding-top: 3vh;
 }
 .project{
-    width: 80%;
-    height: 30%;
 
     border: 2px solid black;
     border-radius: 15px;
@@ -16,27 +14,59 @@
     box-sizing: border-box;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    transition: all 0.5s;
+}
+
+.closed{
+    width: 200px;
+    height: 200px;
+
+    
+}
+
+.closed button{
+    visibility: hidden;
+}
+
+.closed:hover{
+    width: 250px;
+    height: 300px;
+}
+
+.closed:hover button{
+    visibility: visible;
+}
+
+.open{
+    width: 80%;
+    height: 70%;
 }
 
 .img{
     background-color: green;
 
-    width: 20%;
-    height: 100%;
-
     border-radius: 20px;
+
+    transition: all 0.5s;
 }
 
-.info{
-    /* background-color: red; */
+.closed .img{
+    width: 90%;
+    height: 70%;
+}
 
-    width: 75%;
-    height: 100%;
+.closed:hover .img{
+    width: 90%;
+    height: 50%;
+}
 
-    padding: 1%;
-    box-sizing: border-box;
+.open .img{
+    width: 90%;
+    height: 50%;
 }
 
 .title{

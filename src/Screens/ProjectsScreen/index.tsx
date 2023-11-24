@@ -1,21 +1,25 @@
-import Header from "../../Components/Header";
-
+import { useState } from "react"
 import "./index.css"
 
 export default function ProjectsScreen(){
+    const [projectState, setProjectState] = useState ('closed')
+
+    function handleClick(){
+        if(projectState === 'closed'){
+            setProjectState('open')
+        }
+        else{
+            setProjectState('closed')
+        }
+    }
+
     return(
-        <>
-            <main className="projects">
-                <div className="project">
-                    <div className="img"></div>
-                    <div className="info">
-                        <p className="title">Pong</p>
-                        <p className="info">
-                            Jogo pong feito para treinar logica de programação
-                        </p>
-                    </div>
-                </div>
-            </main>
-        </>
+        <main className="projects">
+            <div className={`project ${projectState}`}>
+                <div className="img"></div>
+                <p className="title">Pong</p>
+                <button onClick={() => handleClick()}>{(projectState === "closed")? "Ver mais": "Ver menos"}</button>
+            </div>
+        </main>
     )
 }
