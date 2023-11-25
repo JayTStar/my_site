@@ -1,25 +1,23 @@
-import { useState } from "react"
-import "./index.css"
+import "./index.css";
+import json from "../../projects.json";
+
+import Projects from "./Project";
 
 export default function ProjectsScreen(){
-    const [projectState, setProjectState] = useState ('closed')
 
-    function handleClick(){
-        if(projectState === 'closed'){
-            setProjectState('open')
-        }
-        else{
-            setProjectState('closed')
-        }
+    const projects = json.projects;
+
+    function renderProjects(){
+        return(
+            projects.map((e) => {return <Projects title={e.title} image={e.image} description={e.description} languages={e.languages} technologies={e.technologies}/>})
+        )
     }
+
+    const render = renderProjects();
 
     return(
         <main className="projects">
-            <div className={`project ${projectState}`}>
-                <div className="img"></div>
-                <p className="title">Pong</p>
-                <button onClick={() => handleClick()}>{(projectState === "closed")? "Ver mais": "Ver menos"}</button>
-            </div>
+            {render}
         </main>
     )
 }
